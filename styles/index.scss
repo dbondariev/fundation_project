@@ -1,0 +1,33 @@
+@import 'variables.scss';
+@import 'common.scss';
+@import 'header.scss';
+@import 'headline.scss';
+@import 'about.scss';
+@import 'customers.scss';
+@import 'tips.scss';
+@import 'inbox.scss';
+@import 'communication.scss';
+@import 'audiences.scss';
+@import 'feedback';
+@import 'order.scss';
+@import 'hiring.scss';
+@import 'footer.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Work Sans', sans-serif;
+  color: $font-color;
+  font-size: 16px;
+}
+
+.page {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  @include for-large-up {
+    width: 1400px;
+  }
+}

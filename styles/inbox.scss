@@ -1,0 +1,137 @@
+.inbox {
+  background-color: $inbox-back-color;
+  padding: 50px 15px 48px 15px;
+
+  &__figure {
+    margin: 0;
+  }
+
+  &__image {
+    width: 290px;
+    height: 348px;
+  }
+
+  &__subtitle {
+    display: inline-block;
+    color: $orange-font-color;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    margin-top: 32px;
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0;
+    margin-top: 17px;
+  }
+
+  &__description {
+    font-size: 24px;
+    line-height: 34px;
+    margin: 0;
+    margin-top: 18px;
+  }
+}
+
+.comment {
+  background-color: #fff;
+  margin-top: 30px;
+  padding: 30px 20px 28px;
+  border-bottom: 4px solid #0185d0;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+
+  &__text {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0;
+  }
+
+  &__user-logo {
+    display: flex;
+    margin-top: 26px;
+  }
+
+  &__user-avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 11px;
+  }
+
+  &__user-name {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.director {
+  color: $second-font-color;
+}
+
+@include for-large-up {
+  .inbox {
+    display: flex;
+    height: 790px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+
+    &__figure {
+      margin: 0 164px 0 193px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__image {
+      width: 425px;
+      height: 510px;
+    }
+
+    &__caption {
+      display: block;
+      font-size: 14px;
+      line-height: 22px;
+      opacity: 0.6;
+      margin-top: 15px;
+    }
+
+    .text-block {
+      margin-right: auto;
+    }
+
+    .team-inbox {
+      padding-left: 28px;
+    }
+
+    &__subtitle {
+      margin: 0;
+    }
+
+    &__title {
+      margin-top: 24px;
+      width: 462px;
+      font-size: 56px;
+      line-height: 56px;
+    }
+
+    &__description {
+      margin-top: 30px;
+      width: 461px;
+    }
+
+    .comment {
+      margin-top: 44px;
+      width: 519px;
+    }
+  }
+}
+
+@include for-small {
+  .inbox {
+    &__caption {
+      display: none;
+    }
+  }
+}

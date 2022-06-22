@@ -1,0 +1,165 @@
+.hiring {
+  padding: 50px 15px;
+
+  &__title {
+    margin: 0;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.36px;
+    text-align: center;
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    margin-top: 18px;
+  }
+
+  &__button {
+    width: 290px;
+    height: 48px;
+    background-color: $blue-color;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+}
+
+.vacancy {
+  width: 290px;
+  height: 140px;
+  border: 1px solid #2b292d33;
+  border-radius: 8px;
+  margin-top: 15px;
+  display: flex;
+
+  &:nth-of-type(1) {
+    margin-top: 39px;
+  }
+
+  &__name {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 700;
+    margin: 19px 21px 7px 20px;
+    display: inline-block;
+  }
+
+  &__place {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0 21px 0 20px;
+  }
+
+  &__button {
+    background-color: #d5d4d5;
+    min-width: 50px;
+    height: 138px;
+    justify-content: space-between;
+    border: 1px solid #d5d4d5;
+    border-radius: 0 6px 6px 0;
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__button-arrow {
+    width: 7px;
+    height: 12px;
+  }
+}
+
+@include for-large-up {
+  .hiring {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 105px 0 110px 0;
+
+    &__title {
+      font-size: 55px;
+      line-height: 55px;
+    }
+
+    &__description {
+      width: 555px;
+      margin-top: 20px;
+    }
+
+    &__button {
+      width: 247px;
+      height: 48px;
+      margin-top: 28px;
+    }
+  }
+
+  .vacancy {
+    width: 750px;
+    height: 81px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    margin-top: 20px;
+
+    &:hover {
+      background-color: $third-blue-color;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    &:first-of-type {
+      margin-top: 110px;
+    }
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__name {
+      margin: 0;
+      width: 400px;
+    }
+
+    &__place {
+      margin: 0;
+    }
+
+    &__button {
+      background-color: transparent;
+      border: none;
+      height: 100%;
+    }
+
+    &__button-arrow-white {
+      width: 7px;
+      height: 12px;
+      display: none;
+    }
+
+    &:hover &__button-arrow {
+      display: none;
+    }
+
+    &:hover &__button-arrow-white {
+      display: block;
+    }
+  }
+}
+
+@include for-small {
+  .vacancy {
+    &__button-arrow-white {
+      display: none;
+    }
+  }
+}

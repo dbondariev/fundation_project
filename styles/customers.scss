@@ -1,0 +1,105 @@
+customers {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    border-bottom: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
+    height: 94px;
+    width: 107px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+
+  &__item:last-child {
+    border-right: none;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__logo {
+    filter: brightness(0);
+  }
+}
+
+.nyt-logo {
+  width: 77px;
+  height: 55px;
+}
+
+.forbes-logo {
+  width: 78px;
+  height: 21px;
+}
+
+.apple-logo {
+  width: 35px;
+  height: 40px;
+}
+
+.mashable-logo {
+  width: 77px;
+  height: 13px;
+}
+
+.wsj-logo {
+  width: 49px;
+  height: 28px;
+}
+
+.google-logo {
+  width: 75px;
+  height: 25px;
+}
+
+@include for-large-up {
+  .customers {
+    width: 1140px;
+    height: 75px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 106px;
+
+    &__item {
+      border: 0;
+    }
+
+    &__container {
+      flex-grow: 1;
+    }
+  }
+
+  .nyt-logo {
+    width: 105px;
+    height: 75px;
+  }
+
+  .forbes-logo {
+    width: 111px;
+    height: 30px;
+  }
+
+  .apple-logo {
+    width: 44px;
+    height: 50px;
+  }
+
+  .mashable-logo {
+    width: 153px;
+    height: 26px;
+  }
+
+  .wsj-logo {
+    width: 77px;
+    height: 43px;
+  }
+
+  .google-logo {
+    width: 127px;
+    height: 42px;
+  }
+}

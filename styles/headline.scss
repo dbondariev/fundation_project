@@ -1,0 +1,93 @@
+.headline {
+  background-color: $back-color;
+  padding: 35px 15px 36px 15px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  &__description {
+    display: inline-block;
+    margin: 24px 0 30px 0;
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  &__start-button {
+    margin-bottom: 15px;
+  }
+
+  &__learn-button {
+    margin-bottom: 33px;
+  }
+
+  &__image {
+    width: 320px;
+    height: 180px;
+    position: relative;
+  }
+}
+
+@include for-large-up {
+  .headline {
+    width: 1140px;
+    height: 609px;
+    margin: auto;
+    display: flex;
+    margin-top: 76px;
+    padding: 0;
+
+    &__title {
+      font-size: 80px;
+      line-height: 78px;
+      letter-spacing: -0.5px;
+      display: inline-block;
+      width: 754px;
+      height: 165px;
+    }
+
+    &__description {
+      font-size: 24px;
+      line-height: 34px;
+      margin: 34px 0 58px 0;
+      display: inline-block;
+      width: 456px;
+      height: 102px;
+    }
+
+    &__start-button {
+      width: 160px;
+      height: 48px;
+    }
+
+    &__learn-button {
+      width: 158px;
+      height: 48px;
+      margin-left: 10px;
+    }
+
+    &__image {
+      width: 796px;
+      height: 448px;
+      position: relative;
+      margin-left: auto;
+      right: -105px;
+      top: 7px;
+    }
+
+    &__text-block {
+      z-index: 1;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@include for-small {
+  .image {
+    left: -15px;
+  }
+}

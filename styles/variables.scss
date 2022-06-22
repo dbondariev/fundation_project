@@ -1,0 +1,25 @@
+$font-color: #2b292d;
+$second-font-color: #2b292d99;
+$green-font-color: #009b4d;
+$orange-font-color: #f1592b;
+$blue-font-color: #0189d1;
+$selected-blue-color: #3142c6;
+$third-blue-color: #3141c5;
+
+$back-color: #f3c6bd;
+$second-back-color: #f4f5f7;
+$inbox-back-color: #fcf0e366;
+
+$blue-color: #3040c4;
+
+@mixin for-large-up {
+  @media screen and (min-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin for-small {
+  @media screen and (max-width: 1399px) {
+    @content;
+  }
+}
