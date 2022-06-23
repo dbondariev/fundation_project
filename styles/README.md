@@ -9,5 +9,3 @@ HTML5 & CSS3.
 Used SASS Preprocessors.
 
 FlexBox Implemented.
-
-
