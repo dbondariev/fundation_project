@@ -794,24 +794,24 @@
   line-height: 34px;
   font-weight: 700;
 }
-.audiences__title {
+.audience__title {
   margin: 0;
   margin-top: 17px;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
 }
-.audiences__description {
+.audience__description {
   margin: 0;
   margin-top: 18px;
   font-size: 24px;
   line-height: 34px;
   text-align: center;
 }
-.audiences__start-button {
+.audience__start-button {
   margin-top: 30px;
 }
-.audiences__learn-button {
+.audience__learn-button {
   margin-top: 12px;
 }
 
@@ -844,47 +844,47 @@
 }
 
 @media screen and (min-width: 1400px) {
-  .audiences {
+  .audience {
     height: 983px;
     padding: 108px 131px 110px 130px;
     align-items: center;
   }
-  .audiences__title {
+  .audience__title {
     font-size: 56px;
     line-height: 56px;
     letter-spacing: -0.5px;
     width: 555px;
     margin-top: 24px;
   }
-  .audiences__description {
+  .audience__description {
     font-size: 24px;
     line-height: 34px;
     width: 555px;
     margin-top: 30px;
   }
-  .audiences__buttons {
+  .audience__buttons {
     margin-top: 34px;
   }
-  .audiences__start-button {
+  .audience__start-button {
     width: 160px;
     margin: 0;
     margin-right: 10px;
   }
-  .audiences__learn-button {
+  .audience__learn-button {
     margin: 0;
     width: 158px;
   }
-  .audiences__cards {
+  .audience__cards {
     display: flex;
     margin-top: 111px;
   }
-  .audiences .user-card {
+  .audience .user-card {
     margin: 0;
     margin-right: 30px;
     width: 262px;
     cursor: pointer;
   }
-  .audiences .user-card:last-of-type {
+  .audience .user-card:last-of-type {
     margin: 0;
   }
 }

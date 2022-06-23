@@ -1,4 +1,4 @@
-.audiences {
+.audience {
   padding: 50px 15px;
   display: flex;
   flex-direction: column;
@@ -69,7 +69,7 @@
 }
 
 @include for-large-up {
-  .audiences {
+  .audience {
     height: 983px;
     padding: 108px 131px 110px 130px;
     align-items: center;
