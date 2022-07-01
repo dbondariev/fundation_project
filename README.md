@@ -1,4 +1,4 @@
-# price-tables
+# Fundation Project
 
 ### [Site link](https://dbondariev.github.io/fundation_project/)
 
