@@ -2,7 +2,7 @@
 
 ### [Site link](https://dbondariev.github.io/fundation_project/)
 
-##Static non responsive page
+## Static non responsive page
 
 ### The tech stack is:
 
