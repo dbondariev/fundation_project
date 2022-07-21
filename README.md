@@ -2,7 +2,7 @@
 
 ### [Site link](https://dbondariev.github.io/fundation_project/)
 
-## Static non responsive page
+## Layout supports mobile (up-to-400) and desktop (up-to-1360) versions
 
 ### The tech stack is:
 
